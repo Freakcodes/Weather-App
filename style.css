@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+   box-sizing: border-box;
+   margin:0;
+   padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.flex{
+    display: flex;
+}
+/* Main Section */
+
+.container{
+    background-image: url(https://ubuntuhandbook.org/wp-content/uploads/2021/07/M-Maggs-pixabay.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top:20px;
+}
+.card{
+    /* height: 90%;
+     */
+    width: 90%; 
+    max-width: 470px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgb(24, 77, 78) 0%, rgb(117, 121, 220) 100%);    
+    margin: 20px auto 0;
+    color:#fff;
+    border-radius: 20px;
+    padding: 45px 20px;
+    text-align: center;
+}
+.search{
+    width:100%;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+.search input{
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    color:rgb(rgb(1, 14, 27), rgb(1, 19, 1), rgb(22, 22, 31));
+    padding:10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex:1;
+    margin-right: 18px;
+    font-size: 1.3rem;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: ease-in;
+}
+.search button:hover{
+    animation: 1s;
+    background: #c3c5c4;
+}
+.search button img{
+    width: 16px;
+}
+.w-icon{
+    width:170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{+
+    font-size: 60px;
+    font-weight: 300;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col img{
+    width: 35px;
+}
+.humidity,.wind{
+    font-size:28px;
+}
+li{
+    list-style: none;
+
+}
+h3{
+    text-align: right;
+}
+/* Nav-Bar Section */
+a{  
+    font-size: 23px;
+    width: 6px;
+    /* padding: 1px; */
+    /* border: 0.5px solid white; */
+    /* background-color: #ebfffc; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  
+    transition: 0.3s;
+    
+    border-radius: 12px;
+    padding: 4px;
+    width: 20px;
+    
+}
+a:hover{
+    
+    background-color: BLACK;
+    color: #ebfffc;
+    
+    animation: ease-in;
+    width:10px;
+    font-size: 1.6rem;
+   
+}
+nav{ 
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgb(249, 246, 246);
+    border-radius: 3px;
+}
+
+.navbar{
+
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: 500;
+    padding: 13px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    /* gap:100px; */
+    
+}
+.navbar h1{
+    background:rgb(34,193,195);
+    background: linear-gradient(to right, #8188e4 0%, #c53934 100%);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+.nav{
+    gap:38px;
+}
+h3{
+    cursor:pointer;
+
+}
+/* News Section */
+.card h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #ebfffc;
+}
+.main-news{
+    background-color:  rgb(221, 221, 221);
+    display: flex;
+}
+.n-heading{
+    margin-top:50px;
+    text-align: center;
+    
+}
+.news{
+    margin-left: 80px;
+    margin-top: 90px;
+}
+.news-1{
+    background-color: WHITE;
+    cursor:pointer;
+    padding: 3px;
+    box-shadow: #1f1f1f;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px;
+    width: 650px;
+    
+}
+.news-1 p{
+    
+    /* display: none; */
+}
+
+.news-1 img{
+    border-radius: 20px;
+}
+.news-1:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+    
+    font-size: 1.3rem;
+    
+
+}
+
+
+.news-2{
+    margin-left: 80px;
+    margin-top: 90px;
+}
+
+.news-1 h4{
+    margin-left: 12px;
+}
+.text p{
+    margin-left: 12px;
+    margin-top: 5px;
+   
+}
+/* Footer Part */
+.input{
+  border-radius: 12px;
+}
+.main-content{
+    font-size: 0.9rem   ;
+    color: #fff;
+    background-color: #1f1f1f;
+    margin-top: 20px;
+    display: flex;
+}
+.left-content,.right-content{
+    margin: 20px;
+   width: 33%;
+}
+.left-content p{
+    margin-top:12px;
+}
+.mid-content{
+    margin-top: 20px;
+    margin-left: 90px;
+    width: 33%;
+}
+
+.icons a{
+    background-color:black;
+    color:white;
+    padding:5px;
+    width:30px;
+    margin: 20px;
+    border-radius: 6px;
+}
+.icons a:hover{
+    background-color: white;
+    color:black;
+}
+.mid-content div{
+    margin: 23px;
+}
+.mid-content span{
+    margin-left: 10px;
+}
+.end-text{
+    margin-top: 12px;
+    text-align: center;
+}
+.right-content input{
+    font-size: 15px;
+    width:50%;
+    padding:6px;
+}
+.btn button{
+    padding:8px;
+    background-color: rgb(221, 45, 45);
+    width:50%;
+    transition: 0.3s;
+   
+}
+
+.btn button:hover{
+    border-radius:12px;
+    animation: ease-in;
+    color:white;
+    background-color: rgb(209, 28, 28);
+}
+/* Icons decoration */
+.end-text span{
+    color: rgb(221, 45, 45);
+}
+
+.fa-facebook{
+    /* background-color: white; */
+    color: #3b5998;
+}
+.fa-instagram{
+    color:#bc2a8d;
+}
+.fa-twitter{
+    color: 	 #00aced;
+}
+.fa-house{
+    color:rgb(74, 74, 237)
+}
